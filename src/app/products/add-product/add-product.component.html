@@ -1,1 +1,58 @@
-<p>add-product works!</p>
+
+
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+        <form [formGroup]="AddForm" (ngSubmit)="addNewProduct()">
+          <div class="form-group">
+            <label for="name">Tên sản phẩm</label>
+            <input type="text" class="form-control" id="name" placeholder="Tên sản phẩm">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="category_id">Loại</label>
+            <select id="category_id" class="form-control">
+              <option *ngFor="let cate of categoryList" value="{{cate.id}}">{{cate.categoryName}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="decriptions">Mô tả</label>
+            <input type="text" class="form-control" id="decriptions" placeholder="Mô tả">
+          </div>
+          <div class="form-group">
+            <label for="price">Giá sản phẩm</label>
+            <input type="text" class="form-control" id="price" placeholder="Giá sản phẩm">
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="is_availble">
+              <label class="form-check-label" for="is_availble">
+                Còn hàng
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rating">Đánh giá</label>
+            <input type="text" class="form-control" id="rating" placeholder="Mức đánh giá" value="3">
+          </div>
+
+            <div class="form-group">
+              <label for="vendor_name">vendor_name</label>
+              <input type="text" class="form-control" id="vendor_name">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="waranty">waranty</label>
+              <select id="waranty" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+
+
+          <button type="submit" class="btn btn-primary">Lưu</button>
+        </form>
+      </div>
+  </div>
+</section>

@@ -26,12 +26,16 @@ export class ProductService {
     return this.http.delete<Product>(env.baseUrl+'product/'+ productId);
   }
   searchCategoryProduct(categoryId:number):Observable<Product>{
-    return this.http.get<Product>(env.baseUrl+'product/category='+ categoryId);
+    return this.http.get<Product>(env.baseUrl+'product?category_id='+ categoryId);
   }
   searchDateProduct(dateParam:any):Observable<Product>{
     return this.http.get<Product>(env.baseUrl+'product/date='+ dateParam);
   }
-  viewProduct():Observable<Product>{
+  viewProduct(idProduct:number):Observable<Product>{
+    return this.http.get<Product>(env.baseUrl+'product/'+idProduct);
+  }
+
+  viewAllProduct():Observable<Product>{
     return this.http.get<Product>(env.baseUrl+'product/');
   }
   // viewProductbyCat():Observable<Product>{

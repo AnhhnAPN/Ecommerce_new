@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AddProductComponent } from './add-product/add-product.component';
 import { DeleteProductComponent } from './delete-product/delete-product.component';
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: '', component: ViewAllProductComponent },
   { path: 'add-product', component: AddProductComponent },
   // { path: 'list-product', component: ViewAllProductComponent },
-  { path: 'search-cat/:id', component: ViewProductByCategoryComponent },
+  { path: 'category/:id', component: ViewProductByCategoryComponent },
   { path: 'search-date', component: ViewProductByDateComponent },
   { path: 'delete-product', component: DeleteProductComponent },
   { path: 'view-product/:id', component: ViewProductComponent },
@@ -20,7 +21,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    RouterModule.forChild(routes),
+    ReactiveFormsModule,
+    FormsModule,
+  ],
   exports: [RouterModule],
 })
 export class ProductsRoutingModule {}

@@ -100,7 +100,7 @@ export class ViewAllProductComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.productService.viewProduct().subscribe(data =>{
+    this.productService.viewAllProduct().subscribe(data =>{
       this.productList.push(data);
       this.productList = this.productList.flat();
 
