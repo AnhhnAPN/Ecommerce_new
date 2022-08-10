@@ -19,7 +19,7 @@ import { OdersModule } from './orders/oders.module';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule,
+    // FormsModule,
     HttpClientModule,
     SiteLayoutModule,
     ProductsModule,

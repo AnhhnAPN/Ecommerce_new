@@ -3,8 +3,8 @@
     {
       "id": 1,
       "name": "Party wear Shirt",
-      "category_id":5,
-      "decriptions":"decription for Party wear Shirt",
+      "category_id": 5,
+      "decriptions": "decription for Party wear Shirt",
       "price": 300,
       "is_availble": true,
       "productImg": "1.jpg",
@@ -17,7 +17,7 @@
       "id": 2,
       "name": "Casual Shirt",
       "category_id": 2,
-      "decriptions":"decription Casual Shirt",
+      "decriptions": "decription Casual Shirt",
       "price": 200,
       "is_availble": true,
       "productImg": "1.jpg",
@@ -29,8 +29,8 @@
     {
       "id": 3,
       "name": "Formal Shirt",
-      "category_id":4,
-      "decriptions":"decription Formal Shirt",
+      "category_id": 4,
+      "decriptions": "decription Formal Shirt",
       "price": 500,
       "is_availble": true,
       "productImg": "1.jpg",
@@ -42,8 +42,8 @@
     {
       "id": 4,
       "name": "Summer wear Shirt",
-      "category_id":5,
-      "decriptions":"decription for Party wear Summer",
+      "category_id": 5,
+      "decriptions": "decription for Party wear Summer",
       "price": 300,
       "is_availble": true,
       "productImg": "1.jpg",
@@ -56,7 +56,7 @@
       "id": 5,
       "name": "Winter Shirt",
       "category_id": 2,
-      "decriptions":"decription Casual Winter",
+      "decriptions": "decription Casual Winter",
       "price": 200,
       "is_availble": true,
       "productImg": "1.jpg",
@@ -68,8 +68,8 @@
     {
       "id": 6,
       "name": "Swing Shirt",
-      "category_id":4,
-      "decriptions":"decription Formal Swing",
+      "category_id": 4,
+      "decriptions": "decription Formal Swing",
       "price": 500,
       "is_availble": true,
       "productImg": "1.jpg",
@@ -77,6 +77,17 @@
       "review": 150,
       "vendor_name": "aaaa shop",
       "waranty": 1
+    },
+    {
+      "name": "Áo thu đông",
+      "category_id": "2",
+      "decriptions": "Áo mặc thời gian thu đông",
+      "price": "25.5",
+      "is_availble": "true",
+      "rating": "Tốt",
+      "vendor_name": "Ao thu dong",
+      "waranty": "5",
+      "id": 7
     }
   ],
   "categories": [
